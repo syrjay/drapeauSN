@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grand-div {
+      display:flex;
+      height:100px;
+      margin: 400px;
+    }
+    .vert {
+      width:150px;
+      height:100px;
+      background-color: green;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .jaune {
+      display: flex;
+      align-items:center;
+      width:150px;
+      height:100px;
+      background-color: yellow;
+    }
+    .rouge {
+      width:150px;
+      height:100px;
+      background-color: red;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    #star-five {
+      margin-left: -20px;
+      position: relative;
+      display: block;
+      color: green;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg) scale(.2);
+    }
+    #star-five:before {
+      border-bottom: 80px solid green;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    #star-five:after {
+      position: absolute;
+      display: block;
+      color: green;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+    .happy {
+      position: absolute;
+      top: 500px;
+      left: 360px;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grand-div">
+    <div class="vert"></div>
+    <div class="jaune">
+      <span id="star-five"></span>
+    </div>
+    <div class="rouge"></div>
+  </div>
+  <h1 class="happy"><span style="color:green">Happy </span><span style="color:yellow">Independence </span><span style="color:red">day </span><span style="color:white">!!! (Syr Jay 😎)</span> </h1>
+</body>
+</html>
